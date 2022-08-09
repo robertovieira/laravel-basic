@@ -11,4 +11,13 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    watch: {
+        usePolling: true,
+        origin: 'localhost'
+    },
+    server: {
+        hmr: {
+            host: 'localhost'
+        }
+    }
 });
