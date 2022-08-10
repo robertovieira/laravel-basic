@@ -15,7 +15,12 @@ class AdminController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        $notification = array(
+            'message' => 'Usuário desconectado com sucesso',
+            'alert-type' => 'success'
+        );
+
+        return redirect('/login')->with($notification);
     }
 
     public function profile() {
@@ -50,6 +55,11 @@ class AdminController extends Controller
 
         $userEdit->save();
 
-        return redirect()->route('admin.profile');
+        $notification = array(
+            'message' => 'Perfil atualizado com sucesso',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->route('admin.profile')->with($notification);
     }
 }
