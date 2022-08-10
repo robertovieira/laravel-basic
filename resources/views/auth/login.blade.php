@@ -20,6 +20,12 @@
 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 
+        <style>
+            #toast-container > div {
+                opacity: 1 !important;
+            }
+        </style>
+
     </head>
 
     <body class="auth-body-bg">

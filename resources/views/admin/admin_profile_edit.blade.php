@@ -12,9 +12,9 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="card-title">Edite suas informações</h4>
+                        <h4 class="card-title">Editar informações de perfil</h4>
                         
-                        <form method="post" action="{{ route('store.profile') }}" enctype="multipart/form-data">
+                        <form class="mt-5" method="post" action="{{ route('update.password') }}" enctype="multipart/form-data">
                             @csrf
 
                             <div class="row mb-3">
